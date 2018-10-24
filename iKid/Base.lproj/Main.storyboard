@@ -1,24 +1,272 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="f38-qT-I29">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Good-->
+        <scene sceneID="nud-Lk-PVf">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController title="Good" modalTransitionStyle="flipHorizontal" id="6GI-Du-JaP" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QT8-yN-l9s">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k6V-Cy-UTn">
+                                <rect key="frame" x="313" y="588" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="k6V-Cy-UTn" secondAttribute="height" multiplier="23:15" id="CtA-7p-JOp"/>
+                                </constraints>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="BXN-ct-k0R" kind="show" id="Em7-4T-KXY"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My girlfriend is like the square root of -100." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2P0-U7-zgM">
+                                <rect key="frame" x="92" y="321" width="191" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="k6V-Cy-UTn" firstAttribute="bottom" secondItem="yTw-G9-wq8" secondAttribute="bottom" id="4zh-YN-kPE"/>
+                            <constraint firstItem="yTw-G9-wq8" firstAttribute="trailing" secondItem="k6V-Cy-UTn" secondAttribute="trailing" constant="16" id="BQS-Zq-0El"/>
+                            <constraint firstItem="2P0-U7-zgM" firstAttribute="leading" secondItem="yTw-G9-wq8" secondAttribute="leading" constant="92" id="Fex-ZJ-tyO"/>
+                            <constraint firstItem="yTw-G9-wq8" firstAttribute="trailing" secondItem="2P0-U7-zgM" secondAttribute="trailing" constant="92" id="UF3-UJ-DxG"/>
+                            <constraint firstItem="yTw-G9-wq8" firstAttribute="bottom" secondItem="2P0-U7-zgM" secondAttribute="bottom" constant="256" id="uFq-Id-XnB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yTw-G9-wq8"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Good" id="c2d-gV-kkc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0dm-l4-BEE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-644" y="720.08995502248877"/>
+        </scene>
+        <!--Good_Punchline-->
+        <scene sceneID="dSw-OK-LvQ">
+            <objects>
+                <viewController title="Good_Punchline" modalTransitionStyle="flipHorizontal" id="BXN-ct-k0R" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DaX-cj-QoN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NKx-q9-AzF">
+                                <rect key="frame" x="164" y="503" width="46" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="f38-qT-I29" kind="show" id="8yc-EI-uxm"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A solid 10, but also imaginary." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vlf-r4-WLT">
+                                <rect key="frame" x="71" y="332.5" width="232" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8ax-0i-Gga" firstAttribute="trailing" secondItem="vlf-r4-WLT" secondAttribute="trailing" constant="72" id="0ji-8o-ERX"/>
+                            <constraint firstItem="8ax-0i-Gga" firstAttribute="bottom" secondItem="NKx-q9-AzF" secondAttribute="bottom" constant="134" id="Nyt-w9-Pla"/>
+                            <constraint firstItem="vlf-r4-WLT" firstAttribute="leading" secondItem="8ax-0i-Gga" secondAttribute="leading" constant="71" id="UEL-nF-Hh5"/>
+                            <constraint firstItem="NKx-q9-AzF" firstAttribute="top" secondItem="vlf-r4-WLT" secondAttribute="bottom" constant="150" id="c7m-pm-yei"/>
+                            <constraint firstItem="8ax-0i-Gga" firstAttribute="trailing" secondItem="NKx-q9-AzF" secondAttribute="trailing" constant="165" id="ko7-3s-D2D"/>
+                            <constraint firstItem="NKx-q9-AzF" firstAttribute="leading" secondItem="8ax-0i-Gga" secondAttribute="leading" constant="164" id="lu1-d8-64e"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8ax-0i-Gga"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DqQ-3y-HbE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="341.60000000000002" y="720.08995502248877"/>
+        </scene>
+        <!--Punny-->
+        <scene sceneID="Q8H-Cf-SWq">
+            <objects>
+                <viewController title="Punny" modalTransitionStyle="flipHorizontal" id="KQb-WJ-3OY" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9g1-GL-OCs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gdy-Fy-zqS">
+                                <rect key="frame" x="313" y="588" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Gdy-Fy-zqS" secondAttribute="height" multiplier="23:15" id="dQf-JM-x2i"/>
+                                </constraints>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="rtk-hI-Gxc" kind="show" id="dBI-hw-Nl8"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The only two white actors in Black Panther are Martin Freeman, who played Bilbo Baggins, and Andy Serkis who played Gollum." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bNt-kY-1oJ">
+                                <rect key="frame" x="55" y="301.5" width="265" height="81.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bNt-kY-1oJ" firstAttribute="leading" secondItem="uij-p7-sJH" secondAttribute="leading" constant="55" id="0KT-02-flm"/>
+                            <constraint firstItem="Gdy-Fy-zqS" firstAttribute="bottom" secondItem="uij-p7-sJH" secondAttribute="bottom" id="56w-KR-aPC"/>
+                            <constraint firstItem="uij-p7-sJH" firstAttribute="trailing" secondItem="bNt-kY-1oJ" secondAttribute="trailing" constant="55" id="62f-LT-Dkt"/>
+                            <constraint firstItem="Gdy-Fy-zqS" firstAttribute="top" secondItem="bNt-kY-1oJ" secondAttribute="bottom" constant="205" id="Jo8-1f-5st"/>
+                            <constraint firstItem="uij-p7-sJH" firstAttribute="trailing" secondItem="Gdy-Fy-zqS" secondAttribute="trailing" constant="16" id="ghs-Iq-yAH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uij-p7-sJH"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Punny" id="opu-P2-XKO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rtf-2m-anu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-644" y="-43.628185907046479"/>
+        </scene>
+        <!--Dad Jokes-->
+        <scene sceneID="YQI-eg-YIM">
+            <objects>
+                <viewController title="Dad Jokes" modalTransitionStyle="flipHorizontal" id="1Mt-dZ-l1m" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iiB-OU-TfK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lGA-JD-S7U">
+                                <rect key="frame" x="313" y="588" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="lGA-JD-S7U" secondAttribute="height" multiplier="23:15" id="9y2-Dj-ZwX"/>
+                                </constraints>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="I2M-EX-Svw" kind="show" id="uI7-Lk-Tah"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today I met Bruce Lee’s vegetarian Brother..." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XYT-Aq-5vX">
+                                <rect key="frame" x="70" y="331" width="234" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="XYT-Aq-5vX" firstAttribute="leading" secondItem="ERt-1L-Yg1" secondAttribute="leading" constant="70" id="12X-pq-ZVJ"/>
+                            <constraint firstItem="ERt-1L-Yg1" firstAttribute="trailing" secondItem="lGA-JD-S7U" secondAttribute="trailing" constant="16" id="15a-EN-pid"/>
+                            <constraint firstItem="ERt-1L-Yg1" firstAttribute="trailing" secondItem="XYT-Aq-5vX" secondAttribute="trailing" constant="71" id="EJ8-Zr-DO2"/>
+                            <constraint firstItem="ERt-1L-Yg1" firstAttribute="bottom" secondItem="XYT-Aq-5vX" secondAttribute="bottom" constant="246" id="Ykm-W7-udm"/>
+                            <constraint firstItem="lGA-JD-S7U" firstAttribute="bottom" secondItem="ERt-1L-Yg1" secondAttribute="bottom" id="rKu-xJ-EcK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ERt-1L-Yg1"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Dad Jokes" id="hir-Ck-O5U"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7LI-wK-KvM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-644" y="-730.88455772113946"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="v9h-PR-PqC">
+            <objects>
+                <tabBarController modalTransitionStyle="flipHorizontal" id="f38-qT-I29" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="u1l-Me-9Da">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="KQb-WJ-3OY" kind="relationship" relationship="viewControllers" id="Xxi-FT-VEN"/>
+                        <segue destination="6GI-Du-JaP" kind="relationship" relationship="viewControllers" id="j3j-QQ-9Z0"/>
+                        <segue destination="1Mt-dZ-l1m" kind="relationship" relationship="viewControllers" id="nWQ-2y-Xch"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YK0-Xa-h0r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1762" y="-44"/>
+        </scene>
+        <!--Punny_Punchline-->
+        <scene sceneID="LoB-wm-m3P">
+            <objects>
+                <viewController title="Punny_Punchline" modalTransitionStyle="flipHorizontal" id="rtk-hI-Gxc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8Jx-zd-pSF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E4Y-bH-qCj">
+                                <rect key="frame" x="164" y="503" width="46" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="f38-qT-I29" kind="show" id="NAh-Oo-vaY"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="They're the Tolkien white guys." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CP3-dL-oiF">
+                                <rect key="frame" x="69" y="323" width="236" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="nDy-Vl-QTf" firstAttribute="trailing" secondItem="CP3-dL-oiF" secondAttribute="trailing" constant="70" id="4Er-gg-ezo"/>
+                            <constraint firstItem="E4Y-bH-qCj" firstAttribute="top" secondItem="CP3-dL-oiF" secondAttribute="bottom" constant="159" id="9Yp-Av-rwn"/>
+                            <constraint firstItem="E4Y-bH-qCj" firstAttribute="leading" secondItem="nDy-Vl-QTf" secondAttribute="leading" constant="164" id="OYb-zD-uT0"/>
+                            <constraint firstItem="nDy-Vl-QTf" firstAttribute="trailing" secondItem="E4Y-bH-qCj" secondAttribute="trailing" constant="165" id="RXv-1O-3JZ"/>
+                            <constraint firstItem="CP3-dL-oiF" firstAttribute="leading" secondItem="nDy-Vl-QTf" secondAttribute="leading" constant="69" id="nnk-eK-pnA"/>
+                            <constraint firstItem="nDy-Vl-QTf" firstAttribute="bottom" secondItem="E4Y-bH-qCj" secondAttribute="bottom" constant="134" id="y7J-Tu-kjX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nDy-Vl-QTf"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ef4-iK-OMe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="342" y="-45"/>
+        </scene>
+        <!--Dad_Punchline-->
+        <scene sceneID="v49-qT-ZEj">
+            <objects>
+                <viewController title="Dad_Punchline" modalTransitionStyle="flipHorizontal" id="I2M-EX-Svw" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KoM-eG-TGq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3QK-n2-aLM">
+                                <rect key="frame" x="164" y="503" width="46" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="f38-qT-I29" kind="show" id="aZ4-WN-m7E"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Broco Lee" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sh1-33-oWE">
+                                <rect key="frame" x="149" y="323" width="77" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Sh1-33-oWE" firstAttribute="leading" secondItem="9NX-xa-Oju" secondAttribute="leading" constant="149" id="D0H-Yx-PS3"/>
+                            <constraint firstItem="9NX-xa-Oju" firstAttribute="bottom" secondItem="3QK-n2-aLM" secondAttribute="bottom" constant="134" id="Plp-eB-TfB"/>
+                            <constraint firstItem="3QK-n2-aLM" firstAttribute="top" secondItem="Sh1-33-oWE" secondAttribute="bottom" constant="159" id="Qx9-9T-lw6"/>
+                            <constraint firstItem="3QK-n2-aLM" firstAttribute="leading" secondItem="9NX-xa-Oju" secondAttribute="leading" constant="164" id="ZSQ-RV-Xrg"/>
+                            <constraint firstItem="9NX-xa-Oju" firstAttribute="trailing" secondItem="3QK-n2-aLM" secondAttribute="trailing" constant="165" id="d7y-nc-WPc"/>
+                            <constraint firstItem="9NX-xa-Oju" firstAttribute="trailing" secondItem="Sh1-33-oWE" secondAttribute="trailing" constant="149" id="dWQ-Gs-Te6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9NX-xa-Oju"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L9C-WW-Yq0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="341.60000000000002" y="-731.78410794602701"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="aZ4-WN-m7E"/>
+    </inferredMetricsTieBreakers>
 </document>
